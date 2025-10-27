@@ -1,4 +1,3 @@
-# Arquivo: migracao.py
 import json
 import database
 

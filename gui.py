@@ -38,7 +38,6 @@ class JanelaFormulario(tk.Toplevel):
         self.transient(parent_app.root)
         self.grab_set()
 
-        # Dicionário para guardar todos os widgets de entrada
         self.entries = {}
         self.dynamic_widgets = {}
 
@@ -197,14 +196,12 @@ class JanelaFormulario(tk.Toplevel):
 
     def _salvar(self):
         try:
-            # --- 1. Coleta e Converte ---
             altura_entry, altura_combo = self.entries["Altura do espécime"]
             altura_final_cm = conversor.converter_altura(float(altura_entry.get()), altura_combo.get())
             
             peso_entry, peso_combo = self.entries["Peso do espécime"]
             peso_final_g = conversor.converter_peso(float(peso_entry.get()), peso_combo.get())
 
-            # --- 2. Coleta Dados Padrão ---
             drone_info = {
                 'numero_serie': self.entries["Número de série do drone"].get(),
                 'fabricante': self.entries["Fabricante do drone"].get(),
@@ -218,7 +215,6 @@ class JanelaFormulario(tk.Toplevel):
             }
             status = self.entries["Status de Hibernação"].get()
             
-            # --- 3. Coleta Dados Dinâmicos ---
             batimentos_cardiacos = None
             super_poder_info = None
             
@@ -232,7 +228,6 @@ class JanelaFormulario(tk.Toplevel):
                 if nome_poder: 
                     super_poder_info = {'nome': nome_poder, 'descricao': desc_poder}
 
-            # --- 4. Cria o Objeto Pato ---
             pato_obj = RegistroPatoPrimordial(
                 drone_info=drone_info,
                 altura=altura_final_cm, unidade_altura='cm',
@@ -246,7 +241,6 @@ class JanelaFormulario(tk.Toplevel):
                 super_poder_info=super_poder_info
             )
             
-            # --- 5. Decide se Adiciona ou Edita ---
             if self.pato:
                 database.editar_pato(self.pato.id, pato_obj)
                 messagebox.showinfo("Sucesso", "Registro atualizado com sucesso!")
@@ -254,7 +248,6 @@ class JanelaFormulario(tk.Toplevel):
                 database.adicionar_pato(pato_obj)
                 messagebox.showinfo("Sucesso", "Novo registro adicionado com sucesso!")
 
-            # --- 6. Finaliza ---
             self.destroy() 
             self.app.carregar_lista_patos()
 
@@ -612,7 +605,7 @@ class JanelaCombate(tk.Toplevel):
         return False
     
     def acao_atacar(self):
-        from tkinter import simpledialog # Import local
+        from tkinter import simpledialog
         inventario_str = self.drone.listar_inventario_formatado()
         arma_idx_str = simpledialog.askstring("Atacar", f"{inventario_str}\n\nEscolha a arma (1, 2, 3...):", parent=self)
         try:
