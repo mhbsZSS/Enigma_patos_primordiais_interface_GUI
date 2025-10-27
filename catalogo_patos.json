@@ -1,0 +1,53 @@
+[
+    {
+        "drone_info": {
+            "numero_serie": "US-GroomLake-01",
+            "fabricante": "Skunk Works",
+            "pais_origem": "EUA"
+        },
+        "altura_cm": 182.88,
+        "peso_g": 22679.6,
+        "localizacao": {
+            "cidade": "Deserto de Nevada",
+            "pais": "EUA",
+            "latitude": 37.2431,
+            "longitude": -115.793
+        },
+        "precisao_m": 10.9728,
+        "ponto_referencia": "Hangar 18",
+        "status_hibernacao": "desperto",
+        "batimentos_cardiacos_bpm": null,
+        "quantidade_mutacoes": 9,
+        "super_poder": {
+            "nome": "Distorção da realidade menor",
+            "descricao": "Altera a percepção local, fazendo objetos parecerem estar onde não estão",
+            "classificacoes": [
+                "psiquico",
+                "furtivo",
+                "baixo risco",
+                "comum"
+            ]
+        }
+    },
+    {
+        "drone_info": {
+            "numero_serie": "EU-Jungfrau-07",
+            "fabricante": "Saab AB",
+            "pais_origem": "Suécia"
+        },
+        "altura_cm": 289.56,
+        "peso_g": 95254.31999999999,
+        "localizacao": {
+            "cidade": "Vale de Lauterbrunnen",
+            "pais": "Suíça",
+            "latitude": 46.59,
+            "longitude": 7.9082
+        },
+        "precisao_m": 13.716,
+        "ponto_referencia": "Cachoeiras de Trümmelbach",
+        "status_hibernacao": "em transe",
+        "batimentos_cardiacos_bpm": 16,
+        "quantidade_mutacoes": 18,
+        "super_poder": null
+    }
+]

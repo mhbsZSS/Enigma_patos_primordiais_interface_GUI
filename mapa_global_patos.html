@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3a399821e596ffd03b497d228f6cd3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f3a399821e596ffd03b497d228f6cd3f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f3a399821e596ffd03b497d228f6cd3f = L.map(
+                "map_f3a399821e596ffd03b497d228f6cd3f",
+                {
+                    center: [-21.65, -50.18],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a9e11fd21074bf54b02ee9b0215771f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6a9e11fd21074bf54b02ee9b0215771f.addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var marker_2de6af88a5db0a88c2bb8812326772fe = L.marker(
+                [46.59, 7.9082],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_e6090e12c8b44778aee22998c6d5b6db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23c423d043d51545f1c18f651e8c069a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e8f739048cef0b311fe365b989ce50a = $(`<div id="html_9e8f739048cef0b311fe365b989ce50a" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-EU-Jungfrau-07</b><br>                 ID: 2<br>                 Status: Em Transe<br>                 Local: Vale de Lauterbrunnen, Suíça                 </div>`)[0];
+                popup_23c423d043d51545f1c18f651e8c069a.setContent(html_9e8f739048cef0b311fe365b989ce50a);
+            
+        
+
+        marker_2de6af88a5db0a88c2bb8812326772fe.bindPopup(popup_23c423d043d51545f1c18f651e8c069a)
+        ;
+
+        
+    
+    
+                marker_2de6af88a5db0a88c2bb8812326772fe.setIcon(icon_e6090e12c8b44778aee22998c6d5b6db);
+            
+    
+            var marker_5d63a6abedc35ea788e472299e2cc1ca = L.marker(
+                [35.6762, 139.6503],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_f738eeb59955fcc96d6d9c0b511ffe9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bdb99980e47747e49213bde0edbaa10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cd18315df84b8303f255deb6933f018 = $(`<div id="html_6cd18315df84b8303f255deb6933f018" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-DISN-JP-003</b><br>                 ID: 3<br>                 Status: Em Transe<br>                 Local: Tóquio, Japão                 </div>`)[0];
+                popup_3bdb99980e47747e49213bde0edbaa10.setContent(html_6cd18315df84b8303f255deb6933f018);
+            
+        
+
+        marker_5d63a6abedc35ea788e472299e2cc1ca.bindPopup(popup_3bdb99980e47747e49213bde0edbaa10)
+        ;
+
+        
+    
+    
+                marker_5d63a6abedc35ea788e472299e2cc1ca.setIcon(icon_f738eeb59955fcc96d6d9c0b511ffe9d);
+            
+    
+            var marker_0de75fbb0104caa75835f49a3d3de46a = L.marker(
+                [-78.5255, -85.6171],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_57fab4e6c52b81b710d50b4ae678cde3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_867961f0e95f28319424e5782d6d4974 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebb421bc5e5bd642a5f1db25f2d8b833 = $(`<div id="html_ebb421bc5e5bd642a5f1db25f2d8b833" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-US-GroomLake-01</b><br>                 ID: 5<br>                 Status: Desperto<br>                 Local: Monte Vinson, Antártica                 </div>`)[0];
+                popup_867961f0e95f28319424e5782d6d4974.setContent(html_ebb421bc5e5bd642a5f1db25f2d8b833);
+            
+        
+
+        marker_0de75fbb0104caa75835f49a3d3de46a.bindPopup(popup_867961f0e95f28319424e5782d6d4974)
+        ;
+
+        
+    
+    
+                marker_0de75fbb0104caa75835f49a3d3de46a.setIcon(icon_57fab4e6c52b81b710d50b4ae678cde3);
+            
+    
+            var marker_583ea9e9affd7c282b94544b5ffd89e8 = L.marker(
+                [-22.21, -49.66],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_f0ec9f204650a48986ee4f75736d49ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39c89dd62eadea2d5abf52792c13d124 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78f703df11182cfe86dff0bdf9492c35 = $(`<div id="html_78f703df11182cfe86dff0bdf9492c35" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-DSIN-BR-011</b><br>                 ID: 6<br>                 Status: Desperto<br>                 Local: Garça, Brasil                 </div>`)[0];
+                popup_39c89dd62eadea2d5abf52792c13d124.setContent(html_78f703df11182cfe86dff0bdf9492c35);
+            
+        
+
+        marker_583ea9e9affd7c282b94544b5ffd89e8.bindPopup(popup_39c89dd62eadea2d5abf52792c13d124)
+        ;
+
+        
+    
+    
+                marker_583ea9e9affd7c282b94544b5ffd89e8.setIcon(icon_f0ec9f204650a48986ee4f75736d49ec);
+            
+    
+            var marker_e53889e47bc1512635d46679216ca9e1 = L.marker(
+                [-22.3, -50.3],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_8b74736356b64f05caaad45fb388b22c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b3772d30c4d4f8f16a1c975b7b2a43e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9cdf7c638934fa7cc52dba399016ffd = $(`<div id="html_c9cdf7c638934fa7cc52dba399016ffd" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-DSIN-BR-025</b><br>                 ID: 7<br>                 Status: Desperto<br>                 Local: Quintana, Brasil                 </div>`)[0];
+                popup_9b3772d30c4d4f8f16a1c975b7b2a43e.setContent(html_c9cdf7c638934fa7cc52dba399016ffd);
+            
+        
+
+        marker_e53889e47bc1512635d46679216ca9e1.bindPopup(popup_9b3772d30c4d4f8f16a1c975b7b2a43e)
+        ;
+
+        
+    
+    
+                marker_e53889e47bc1512635d46679216ca9e1.setIcon(icon_8b74736356b64f05caaad45fb388b22c);
+            
+    
+            var marker_61700a6f2d8bbc830c1e9f51857e02a7 = L.marker(
+                [52.52, 13.4],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_7d781761635129bc3cefd5e65050c3c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c5b8b83b52ec992de9176a099c0af8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff05406323163683402fc032e6812cdc = $(`<div id="html_ff05406323163683402fc032e6812cdc" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-DSIN-EU-018</b><br>                 ID: 8<br>                 Status: Desperto<br>                 Local: Berlim, Alemanha                 </div>`)[0];
+                popup_4c5b8b83b52ec992de9176a099c0af8c.setContent(html_ff05406323163683402fc032e6812cdc);
+            
+        
+
+        marker_61700a6f2d8bbc830c1e9f51857e02a7.bindPopup(popup_4c5b8b83b52ec992de9176a099c0af8c)
+        ;
+
+        
+    
+    
+                marker_61700a6f2d8bbc830c1e9f51857e02a7.setIcon(icon_7d781761635129bc3cefd5e65050c3c8);
+            
+    
+            var marker_48076f00c102df0f49f11861b9af8abf = L.marker(
+                [-3.11, -60.02],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_aea93e533e42d5e8b26579d8f07e91aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8a300cc4230dab05425b5f9dbcc3114 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34862956f373acd9d356a9403f984b43 = $(`<div id="html_34862956f373acd9d356a9403f984b43" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-DSIN-AM-009</b><br>                 ID: 9<br>                 Status: Desperto<br>                 Local: Manaus, Brasil                 </div>`)[0];
+                popup_a8a300cc4230dab05425b5f9dbcc3114.setContent(html_34862956f373acd9d356a9403f984b43);
+            
+        
+
+        marker_48076f00c102df0f49f11861b9af8abf.bindPopup(popup_a8a300cc4230dab05425b5f9dbcc3114)
+        ;
+
+        
+    
+    
+                marker_48076f00c102df0f49f11861b9af8abf.setIcon(icon_aea93e533e42d5e8b26579d8f07e91aa);
+            
+    
+            var marker_c4919b159bb855f3587b5fe44da0ec85 = L.marker(
+                [-4.44, 15.26],
+                {
+}
+            ).addTo(map_f3a399821e596ffd03b497d228f6cd3f);
+        
+    
+            var icon_f1e0bfea5fbb2d41789816bff3d61513 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39b7a3812534c28ab678dc25270930f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57675813f7beb82589a0f576d1635589 = $(`<div id="html_57675813f7beb82589a0f576d1635589" style="width: 100.0%; height: 100.0%;">                 <b>Espécime-DSIN-AF-004</b><br>                 ID: 10<br>                 Status: Desperto<br>                 Local: Kinshasa, Rep. Dem. do Congo                 </div>`)[0];
+                popup_39b7a3812534c28ab678dc25270930f5.setContent(html_57675813f7beb82589a0f576d1635589);
+            
+        
+
+        marker_c4919b159bb855f3587b5fe44da0ec85.bindPopup(popup_39b7a3812534c28ab678dc25270930f5)
+        ;
+
+        
+    
+    
+                marker_c4919b159bb855f3587b5fe44da0ec85.setIcon(icon_f1e0bfea5fbb2d41789816bff3d61513);
+            
+</script>
+</html>

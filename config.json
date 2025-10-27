@@ -1,0 +1,83 @@
+{
+  "base_dsin": {
+    "nome": "Marília, SP",
+    "coordenadas": [-22.2335, -49.9334]
+  },
+  "regras_custo": {
+    "base": 100,
+    "por_cm_altura": 0.5,
+    "por_100g_peso": 0.1,
+    "por_km_distancia": 0.2,
+    "mutacao_exponencial": 1.5,
+    "mutacao_multiplicador": 10
+  },
+  "regras_risco": {
+    "status": {
+      "hibernacao_profunda": 5,
+      "em_transe": 25,
+      "desperto": 70
+    },
+    "instabilidade_transe": {
+      "bpm_base": 10,
+      "multiplicador_por_bpm": 2
+    },
+    "poder_classificacao": {
+      "letal": 50,
+      "area_de_efeito": 30,
+      "psiquico": 20,
+      "tatico": 10
+    }
+  },
+  "regras_ciencia": {
+    "por_mutacao": 10,
+    "status_bonus": {
+      "desperto": 30,
+      "em_transe": 15
+    },
+    "poder_raridade": {
+      "raro": 50,
+      "unico": 100
+    }
+  },
+  "regras_prioridade": {
+    "multiplicador_ciencia": 100,
+    "niveis": {
+      "maxima": 100,
+      "alta": 50,
+      "media": 20
+    }
+  },
+  "regras_ambiente": {
+    "floresta_densa": {
+      "palavras_chave": ["floresta", "selva", "amazônia", "manaus", "congo"],
+      "mod_custo": 1.3,
+      "mod_risco": 1.2
+    },
+    "deserto_arido": {
+      "palavras_chave": ["deserto", "saara", "atacama", "gobi", "cairo"],
+      "mod_custo": 1.4,
+      "mod_risco": 1.0
+    },
+    "montanha_alta": {
+      "palavras_chave": ["montanha", "pico", "alpes", "himalaia", "andes", "eiger"],
+      "mod_custo": 1.2,
+      "mod_risco": 1.3
+    },
+    "zona_urbana": {
+      "palavras_chave": ["cidade", "são paulo", "new york", "tóquio", "metrópole"],
+      "mod_custo": 0.8,
+      "mod_risco": 1.8
+    },
+    "pantano_ou_mangue": {
+      "palavras_chave": ["pântano", "mangue", "everglades", "pantanal", "bonito"],
+      "mod_custo": 1.5,
+      "mod_risco": 1.4
+    },
+    "padrao": {
+      "palavras_chave": [],
+      "mod_custo": 1.0,
+      "mod_risco": 1.0
+    }
+  }
+
+}
